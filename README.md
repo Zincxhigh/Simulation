@@ -1,3 +1,7 @@
+![Made with Love](https://img.shields.io/badge/Made%20with-❤%20Love-red)
+![Made with Blood, Sweat & Tears](https://img.shields.io/badge/Made%20with-Blood%2C%20Sweat%20%26%20Tears-darkred)
+![Greatest Website Ever](https://img.shields.io/badge/Greatest-Website%20Ever-blue)
+
 # Simulation
 A website all about emulation from "how to start emulating" to "how the other emulations are coming along" you will find all the necessary tools to enjoy your childhood title.
 
