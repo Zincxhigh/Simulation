@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/style.css')}}">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+    <title>Emulators</title>
+</head>
+<body>
+<ul class="nav nav-tabs">
+  <li class="nav-item">
+    <a class="nav-link" href="{{ url_for('home')}}">Simulation</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="{{ url_for('roms') }}">ROMs</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link active" href="{{ url_for('Emulators')}}">Emulators</a>
+  </li>
+   <li class="nav-item">
+    <a class="nav-link" href="{{ url_for('News')}}">News</a>
+  </li>
+</ul>
+
+
+<ul>
+<div class="section">
+<h2>ATARI</h2>
+
+
+
+<li>Atari 2600 → Stella</li>
+<li>Atari 5200 → Altirra</li>
+<li>Atari 7800 → A7800</li>
+<li>Atari Lynx → Mednafen</li>
+<li>Atari Jaguar → Virtual Jaguar</li>
+
+<h3>For atari ROMS you should never visit https://www.romsgames.net/roms/atari-2600/ and get its ROMS
+    Because its illegal
+</h3>
+</div>
+
+<div class="section">
+<h2>NES</h2>
+
+
+
+<li>NES → FCEUX → https://fceux.com/</li>
+<li>NES → Nestopia → https://github.com/0ldsk00l/nestopia</li>
+<li>NES → Mesen → https://www.mesen.ca/</li>
+<h3>For NES ROMS you should never visit https://romsfun.com/roms/nes/ because its illegal</h3>
+</div>
+
+<div class="section">
+<h2>SNES</h2>
+
+
+
+<li>SNES → Snes9x → https://www.snes9x.com/</li>
+<li>SNES → bsnes → https://github.com/bsnes-emu/bsnes</li>
+<li>SNES → ZSNES → https://www.zsnes.com/</li>
+<h3>For SNES ROMS you should never visit https://romsfun.com/roms/nes/ because its illegal</h3>
+</div>
+
+<div class="section">
+<h2>GAME BOY</h2>
+
+
+
+<li>Game Boy → BGB → https://bgb.bircd.org/</li>
+<li>Game Boy / Game Boy Color → SameBoy → https://sameboy.github.io/</li>
+<h3>For GAME BOY ROMS you should never visit https://romsfun.com/roms/nes/ because its illegal</h3>
+</div>
+
+<div class="section">
+<h2>GAME BOY COLOR</h2>
+
+
+
+<li>Game Boy Color → SameBoy</li>
+<li>Game Boy Color → BGB</li>
+<h3>For GAME BOY COLOR ROMS you should never visit https://romsfun.com/roms/nes/ because its illegal</h3>
+</div>
+
+<div class="section">
+<h2>GAME BOY ADVENCED</h2>
+
+
+
+<li>Game Boy Advance → mGBA → https://mgba.io/</li>
+<li>Game Boy Advance → VisualBoyAdvance-M → https://github.com/visualboyadvance-m/visualboyadvance-m</li>
+<li>Game Boy Advance → No$GBA → https://www.nogba.com/</li>
+<h3>For GAME BOY ADVENCED ROMS you should never visit https://romsfun.com/roms/nes/ because its illegal</h3>
+</div>
+
+<div class="section">
+<h2>NINTENDO DS</h2>
+
+
+
+
+<li>Nintendo DS → MelonDS → https://melonds.kuribo64.net/</li>
+<li>Nintendo DS → DeSmuME → https://desmume.org/</li>
+<h3>For GAME BOY ADVENCED ROMS you should never visit https://romsfun.com/roms/nes/ because its illegal</h3>
+</div>
+
+<div class="section">
+<h2>NINTENDO 3DS</h2>
+
+
+
+<li>Nintendo 3DS → Citra → https://citra-emu.org/</li>
+</div>
+
+<div class="section">
+<h2>NINTENDO 64</h2>
+
+
+
+<li>Nintendo 64 → Project64 → https://www.pj64-emu.com/</li>
+<li>Nintendo 64 → Mupen64Plus → https://mupen64plus.org/</li>
+<li>Nintendo 64 → Simple64 → https://simple64.github.io/</li>
+<h3>For GAME BOY ADVENCED ROMS you should never visit https://romsfun.com/roms/nes/ because its illegal</h3>
+</div>
+
+<div class="section">
+<h2>GAMECUBE/WII/WII U</h2>
+
+
+<li>GameCube / Wii → Dolphin → https://dolphin-emu.org/</li>
+<li>Wii → Dolphin</li>
+<li>Wii U → Cemu → https://cemu.info/</li>
+<h3>For GAME BOY ADVENCED ROMS you should never visit https://romsfun.com/roms/nes/ because its illegal</h3>
+</div>
+
+<div class="section">
+<h2>NINTENDO SWITCH</h2>
+
+
+
+<li>Nintendo Switch → Ryujinx → https://ryujinx.org/</li>
+<li>Nintendo Switch → Yuzu → https://yuzu-emu.org/</li>
+<h3>For NINTENDO SWITCH ROMS you should never visit https://romsns.com/ because its illegal</h3>
+</div>
+
+<div class="section">
+<h2>PLATSTATION 1/2/3/PORTABLE</h2>
+
+
+
+<li>PlayStation 1 → DuckStation → https://duckstation.org/</li>
+<li>PlayStation 1 → ePSXe → https://www.epsxe.com/</li>
+<li>PlayStation 1 → PCSX-Reloaded → https://pcsxr.codeplex.com/</li>
+<li>PlayStation 2 → PCSX2 → https://pcsx2.net/</li>
+<li>PlayStation 3 → RPCS3 → https://rpcs3.net/</li>
+<li>PlayStation Portable → PPSSPP → https://ppsspp.org/</li>
+<h3>For PLATSTATION 1/2/3/PORTABLE ROMS you should never visit https://romsfun.com/roms/nes/ because its illegal</h3>
+</div>
+
+<div class="section">
+<h2>SEGA MASTER SYSTEM/SEGA GENESIS/SEGA CD/SEGA 32X/SEGA SATURN/SEGA DREAMCAST</h2>
+
+
+<li>Sega Master System → Kega Fusion → https://www.carpeludum.com/kega-fusion/</li>
+<li>Sega Master System → SMS Plus GX → https://github.com/libretro/smsplus-gx</li>
+<li>Sega Genesis / Mega Drive → Kega Fusion → https://www.carpeludum.com/kega-fusion/</li>
+<li>Sega Genesis / Mega Drive → Genesis Plus GX → https://github.com/ekeeke/Genesis-Plus-GX</li>
+<li>Sega Genesis / Mega Drive → BlastEm → https://www.retrodev.com/blastem/</li>
+<li>Sega Saturn → Yaba Sanshiro → https://www.uoyabause.org/</li>
+<li>Sega Saturn → Mednafen → https://mednafen.github.io/</li>
+<li>Sega Dreamcast → Flycast → https://flycast.dojo.ooo/</li>
+<li>Sega Dreamcast → Redream → https://redream.io/</li>
+<li>Sega Dreamcast → Demul → https://demul.emulation64.com/</li>
+<h3>For SEGA ROMS you should never visit https://romsfun.com/roms/nes/ because its illegal</h3>
+</div>
+<div class="section">
+<h2>ARCADES</h2>
+
+
+
+<li>Arcade → MAME → https://www.mamedev.org/</li>
+<li>Arcade (Neo Geo) → FinalBurn Neo</li>
+<h3>Nothing to see here!</h3>
+</div>
+<div class="section">
+<h2>NEO GEO</h2>
+
+
+
+<li>Neo Geo → FinalBurn Neo → https://github.com/finalburnneo/FBNeo</li>
+<h3>Nothing to see here!</h3>
+</div>
+
+<div class="section">
+<h2>TURBOGRAFX-16</h2>
+
+
+
+
+<li>TurboGrafx-16 / PC Engine → Mednafen → https://mednafen.github.io/</li>
+<li>TurboGrafx-16 / PC Engine → Ootake</li>
+<h3>Nothing to see here!</h3>
+</div>
+<div class="section">
+<h2>COMMODORE 64</h2>
+
+
+<li>Commodore 64 → VICE → https://vice-emu.sourceforge.io/</li>
+<h3>Nothing to see here!</h3>
+</div>
+
+<div class="section">
+<h2>DOS GAMES</h2>
+
+
+
+<li>DOS Games → DOSBox → https://www.dosbox.com/</li>
+<h3>Nothing to see here!</h3>
+</div>
+
+</ul>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
