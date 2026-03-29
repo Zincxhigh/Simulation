@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/style.css')}}">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+    <title>Emulators</title>
+</head>
+<body>
+<ul class="nav nav-tabs">
+  <li class="nav-item">
+    <a class="nav-link" href="{{ url_for('home')}}">Simulation</a>
+    </li>
+  
+  <li class="nav-item">
+    <a class="nav-link" href="{{ url_for('roms') }}">ROMs</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link active" href="{{ url_for('Emulators')}}">Emulators</a>
+  </li>
+   <li class="nav-item">
+    <a class="nav-link" href="{{ url_for('News')}}">News</a>
+  </li>
+    <li class="nav-item">
+    <a class="nav-link" href="{{ url_for('Modding')}}">Modding</a>
+  </li>
+</ul>
+
+
+<ul>
+ <div class="section">
+  <h2>Atari</h2>
+
+ <a href="https://www.virtualdub.org/altirra.html" target="_blank"><img src=""><h3>Atari 5200 → Altirra</h3></a>
+ <a href="https://sourceforge.net/projects/a7800/" target="_blank"><img src=""><h3>Atari 7800 → A7800</h3></a>
+ <a href="https://mednafen.github.io/" target="_blank"><img src=""><h3>Atari Lynx → Mednafen</h3></a>
+ <a href="https://sourceforge.net/projects/virtualjaguar/" target="_blank"><img src=""><h3>Atari Jaguar → Virtual Jaguar</h3></a>
+</div>
+<div class="section">
+<h2>NES</h2>
+
+<a href="https://fceux.com/" target="_blank"><img src=""><h3>NES → FCEUX</h3></a>
+<a href="https://github.com/0ldsk00l/nestopia" target="_blank"><img src=""><h3>NES → Nestopia</h3></a>
+<a href="https://www.mesen.ca/" target="_blank"><img src=""><h3>NES → Mesen</h3></a>
+
+</div>
+
+<div class="section">
+<h2>SNES</h2>
+
+<a href="https://www.snes9x.com/" target="_blank"><img src=""><h3>SNES → Snes9x</h3></a>
+<a href="https://github.com/bsnes-emu/bsnes" target="_blank"><img src=""><h3>SNES → bsnes</h3></a>
+<a href="https://www.zsnes.com/" target="_blank"><img src=""><h3>SNES → ZSNES</h3></a>
+
+</div>
+
+<div class="section">
+<h2>GAME BOY</h2>
+
+<a href="https://bgb.bircd.org/" target="_blank"><img src=""><h3>Game Boy → BGB</h3></a>
+<a href="https://sameboy.github.io/" target="_blank"><img src=""><h3>Game Boy / Game Boy Color → SameBoy</h3></a>
+
+</div>
+
+<div class="section">
+<h2>GAME BOY COLOR</h2>
+
+<a href="https://sameboy.github.io/" target="_blank"><img src=""><h3>Game Boy Color → SameBoy</h3></a>
+<a href="https://bgb.bircd.org/" target="_blank"><img src=""><h3>Game Boy Color → BGB</h3></a>
+
+</div>
+
+<div class="section">
+<h2>GAME BOY ADVENCED</h2>
+
+<a href="https://mgba.io/" target="_blank"><img src=""><h3>Game Boy Advance → mGBA</h3></a>
+<a href="https://github.com/visualboyadvance-m/visualboyadvance-m" target="_blank"><img src=""><h3>Game Boy Advance → VisualBoyAdvance-M</h3></a>
+<a href="https://www.nogba.com/" target="_blank"><img src=""><h3>Game Boy Advance → No$GBA</h3></a>
+
+</div>
+
+<div class="section">
+<h2>NINTENDO DS</h2>
+
+<a href="https://melonds.kuribo64.net/" target="_blank"><img src=""><h3>Nintendo DS → MelonDS</h3></a>
+<a href="https://desmume.org/" target="_blank"><img src=""><h3>Nintendo DS → DeSmuME</h3></a>
+
+</div>
+
+<div class="section">
+<h2>NINTENDO 3DS</h2>
+
+<a href="https://citra-emu.org/" target="_blank"><img src=""><h3>Nintendo 3DS → Citra</h3></a>
+
+</div>
+
+<div class="section">
+<h2>NINTENDO 64</h2>
+
+<a href="https://www.pj64-emu.com/" target="_blank"><img src=""><h3>Nintendo 64 → Project64</h3></a>
+<a href="https://mupen64plus.org/" target="_blank"><img src=""><h3>Nintendo 64 → Mupen64Plus</h3></a>
+<a href="https://simple64.github.io/" target="_blank"><img src=""><h3>Nintendo 64 → Simple64</h3></a>
+
+</div>
+
+<div class="section">
+<h2>GAMECUBE/WII/WII U</h2>
+
+<a href="https://dolphin-emu.org/" target="_blank"><img src=""><h3>GameCube / Wii → Dolphin</h3></a>
+<a href="https://dolphin-emu.org/" target="_blank"><img src=""><h3>Wii → Dolphin</h3></a>
+<a href="https://cemu.info/" target="_blank"><img src=""><h3>Wii U → Cemu</h3></a>
+
+</div>
+
+<div class="section">
+<h2>NINTENDO SWITCH</h2>
+
+<a href="https://ryujinx.org/" target="_blank"><img src=""><h3>Nintendo Switch → Ryujinx</h3></a>
+<a href="https://yuzu-emu.org/" target="_blank"><img src=""><h3>Nintendo Switch → Yuzu</h3></a>
+
+</div>
+
+<div class="section">
+<h2>PLATSTATION 1/2/h3/PORTABLE</h2>
+
+<a href="https://duckstation.org/" target="_blank"><img src=""><h3>PlayStation 1 → DuckStation</h3></a>
+<a href="https://www.epsxe.com/" target="_blank"><img src=""><h3>PlayStation 1 → ePSXe</h3></a>
+<a href="https://pcsxr.codeplex.com/" target="_blank"><img src=""><h3>PlayStation 1 → PCSX-Reloaded</h3></a>
+<a href="https://pcsx2.net/" target="_blank"><img src=""><h3>PlayStation 2 → PCSX2</h3></a>
+<a href="https://rpcs3.net/" target="_blank"><img src=""><h3>PlayStation h3 → RPCS3</h3></a>
+<a href="https://ppsspp.org/" target="_blank"><img src=""><h3>PlayStation Portable → PPSSPP</h3></a>
+
+</div>
+
+<div class="section">
+<h2>SEGA</h2>
+
+<a href="https://www.carpeludum.com/kega-fusion/" target="_blank"><img src=""><h3>Sega Master System → Kega Fusion</h3></a>
+<a href="https://github.com/libretro/smsplus-gx" target="_blank"><img src=""><h3>Sega Master System → SMS Plus GX</h3></a>
+<a href="https://www.carpeludum.com/kega-fusion/" target="_blank"><img src=""><h3>Sega Genesis → Kega Fusion</h3></a>
+<a href="https://github.com/ekeeke/Genesis-Plus-GX" target="_blank"><img src=""><h3>Sega Genesis → Genesis Plus GX</h3></a>
+<a href="https://www.retrodev.com/blastem/" target="_blank"><img src=""><h3>Sega Genesis → BlastEm</h3></a>
+<a href="https://www.uoyabause.org/" target="_blank"><img src=""><h3>Sega Saturn → Yaba Sanshiro</h3></a>
+<a href="https://mednafen.github.io/" target="_blank"><img src=""><h3>Sega Saturn → Mednafen</h3></a>
+<a href="https://flycast.dojo.ooo/" target="_blank"><img src=""><h3>Sega Dreamcast → Flycast</h3></a>
+<a href="https://redream.io/" target="_blank"><img src=""><h3>Sega Dreamcast → Redream</h3></a>
+<a href="https://demul.emulation64.com/" target="_blank"><img src=""><h3>Sega Dreamcast → Demul</h3></a>
+
+</div>
+
+<div class="section">
+<h2>ARCADES</h2>
+
+<a href="https://www.mamedev.org/" target="_blank"><img src=""><h3>Arcade → MAME</h3></a>
+<a href="https://github.com/finalburnneo/FBNeo" target="_blank"><img src=""><h3>Arcade (Neo Geo) → FinalBurn Neo</h3></a>
+
+</div>
+
+<div class="section">
+<h2>NEO GEO</h2>
+
+<a href="https://github.com/finalburnneo/FBNeo" target="_blank"><img src=""><h3>Neo Geo → FinalBurn Neo</h3></a>
+
+</div>
+
+<div class="section">
+<h2>TURBOGRAFX-16</h2>
+
+<a href="https://mednafen.github.io/" target="_blank"><img src=""><h3>TurboGrafx-16 → Mednafen</h3></a>
+<a href="#" target="_blank"><img src=""><h3>TurboGrafx-16 → Ootake</h3></a>
+
+</div>
+
+<div class="section">
+<h2>COMMODORE 64</h2>
+
+<a href="https://vice-emu.sourceforge.io/" target="_blank"><img src=""><h3>Commodore 64 → VICE</h3></a>
+
+</div>
+
+<div class="section">
+<h2>DOS GAMES</h2>
+
+<a href="https://www.dosbox.com/" target="_blank"><img src=""><h3>DOS Games → DOSBox</h3></a>
+
+</div>
+</ul>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
