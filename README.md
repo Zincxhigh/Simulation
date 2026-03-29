@@ -10,6 +10,7 @@ A website all about emulation from "how to start emulating" to "how the other em
 * A ROM section explaining how to install ROMS and play them.
 * A section explaining all the emulators currently existing for each consle from Playstation to Arcade games.
 * A News section diving into the news of emulation whats happening new around the world and in the emulation world.
+* A Modding section explaining how to mod every consele from PS till commrade 16.
 ## stack used
 ## FRONTEND
 * Raw CSS
