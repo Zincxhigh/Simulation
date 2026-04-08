@@ -20,8 +20,11 @@ A website all about emulation from "how to start emulating" to "how the other em
 * Python
 * Flask
 * Requests
+<img width="1280" height="894" alt="Snipaste_2026-04-08_17-51-06" src="https://github.com/user-attachments/assets/a0b464a9-293a-4eab-98df-199457a09155" />
 
+<img width="1280" height="941" alt="Snipaste_2026-04-08_17-51-30" src="https://github.com/user-attachments/assets/8155695e-71c1-45cc-ac6f-4195c639d29d" />
 
+<img width="1280" height="894" alt="Snipaste_2026-04-08_17-52-03" src="https://github.com/user-attachments/assets/1aad555d-2ab0-4094-b622-48fe4977ebdd" />
 
 
 ## Structure
