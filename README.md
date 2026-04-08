@@ -52,5 +52,5 @@ Clone the repository:
    Navigate through News, Emulators, and ROMs pages.
    Contributing
 
-Feel free to fork the project and submit pull requests. Please follow coding conventions and comment your code.
+Feel free to fork the project and submit pull requests.
 
