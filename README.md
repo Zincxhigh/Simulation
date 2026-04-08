@@ -26,16 +26,16 @@ A website all about emulation from "how to start emulating" to "how the other em
 
 ## Structure
 Templates/
-├── index.html 
-├── News.html 
-├── Emulators.html 
-├── roms.html 
-├── Modding.html
-└── Games.html
+* ├── index.html 
+* ├── News.html 
+* ├── Emulators.html 
+* ├── roms.html 
+* ├── Modding.html
+* └── Games.html
 
 Static/
-└── Style.css 
-└── script.js
+* └── Style.css 
+* └── script.js
 
 ## HOW TO USE THE CODE:=>
 Clone the repository:
