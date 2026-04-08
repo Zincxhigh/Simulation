@@ -1,0 +1,2163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/style.css')}}">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <title>Modding</title>
+</head>
+<body>
+  <ul class="nav nav-tabs">
+  <li class="nav-item">
+    <a class="nav-link" href="{{ url_for('home')}}" onclick="playsound(event)" onmouseenter="playHover()" >Simulation</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="{{ url_for('roms') }}" onclick="playsound(event)" onmouseenter="playHover()" >ROMs</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="{{ url_for('Emulators')}}" onclick="playsound(event)" onmouseenter="playHover()" >Emulators</a>
+  </li>
+   <li class="nav-item">
+    <a class="nav-link" href="{{ url_for('News')}}" onclick="playsound(event)" onmouseenter="playHover()" >News</a>
+  </li>
+   <li class="nav-item">
+    <a class="nav-link active" href="{{ url_for('Modding')}}" onclick="playsound(event)" onmouseenter="playHover()" >Modding</a>
+  </li>
+      <li class="nav-item">
+    <a class="nav-link" href="{{ url_for('Games')}}" onclick="playsound(event)" onmouseenter="playHover()" >Games</a>
+  </li>
+</ul>
+<div class="section">
+  <h2>Playstation</h2>
+<div class="dropdown" onmouseenter="playHover()">
+  <input type="checkbox" id="toggle1">
+  <label for="toggle1" class="dropdown-title"><img src="{{ url_for('static', filename='images/playstation 1.jpg') }}" width="50px" height="25px"> Playstation 1</label>
+  
+  <div class="dropdown-content">
+<header>
+    <h1>Tonyhax International</h1>
+    <h3>The Ultimate Backup CD-R / Import Loader for PS1 & Early PS2</h3>
+</header>
+<hr>
+
+<h2>About</h2>
+<h3>
+Tonyhax International is an advanced soft-mod loader for PlayStation 1 and early PlayStation 2 consoles. 
+It is built on the original Tonyhax project and greatly expands its features, compatibility, and usability.
+</h3>
+<h3><b>Developed by:</b> Alex Free, MottZilla, Patchouli, SylverReZ</h3>
+
+<hr>
+<h2>Key Features</h2>
+<ul>
+<li>Supports all PS1 models (SCPH-1000 → SCPH-103)</li>
+<li>Supports early PS2 models (SCPH-10000 → SCPH-39004)</li>
+<li>GameID support including early Japanese games</li>
+<li>Advanced anti-piracy bypass system</li>
+<li>Automatic console detection</li>
+<li>GameShark cheat support via memory cards</li>
+<li>Boot backup CD-Rs and import games</li>
+<li>Memory card formatting inside loader</li>
+<li>Supports FreePSXBoot exploit</li>
+<li>Patch games directly to work with loader</li>
+<li>Faster xStation boot support</li>
+</ul>
+
+<hr>
+
+<h2>Download</h2>
+<h3><b>Version 1.6.0</b> <span>Latest</span></h3>
+<a href="https://github.com/alex-free/tonyhax/releases/download/v1.6.0i/tonyhax-international-v1.6.0.zip">tonyhax-international-v1.6.0</a>
+
+<hr>
+
+<h2>How To Start</h2>
+<ul>
+<li>Use FreePSXBoot memory card exploit</li>
+<li>Flash cheat cartridge (GameShark / Action Replay)</li>
+<li>Use Boot CD (CD-R)</li>
+<li>Use game-specific save exploits</li>
+<li>Patch game using TOCPerfect</li>
+</ul>
+
+<hr>
+
+<h2>FAQ</h2>
+
+<details>
+<summary>Why is my game not booting properly?</summary>
+<h3>Your CD-R quality, burner, or optical drive may be the issue. Use high-quality discs and proper burn speeds.</h3>
+</details>
+
+<details>
+<summary>Can it play protected games?</summary>
+<h3>Yes. It automatically detects and bypasses protections.</h3>
+</details>
+
+<details>
+<summary>Why remove FreePSXBoot memory card?</summary>
+<h3>To prevent crashes and maximize compatibility.</h3>
+</details>
+
+<details>
+<summary>Why aren’t newer PS2s supported?</summary>
+<h3>Hardware limitations prevent proper functionality on newer models.</h3>
+</details>
+
+<hr>
+
+
+<h2>Relevant Tools</h2>
+<ul>
+<li>PlayStation Disc Burner</li>
+<li>TOCPerfect</li>
+<li>FreePSXBoot</li>
+<li>NXFLASH</li>
+<li>PSX80MP</li>
+<li>PSEXE2ROM</li>
+</ul>
+
+<hr>
+
+<h2>Contribute</h2>
+<h3>
+You can help by:
+</h3>
+<ul>
+<li>Improving code (C / MIPS)</li>
+<li>Reporting unsupported games</li>
+<li>Improving documentation</li>
+<li>Donating to development</li>
+</ul>
+
+
+<hr>
+
+
+<h3>Made with ❤️ for the PlayStation modding community</h3>
+
+
+
+  </div>
+</div>
+
+ 
+
+<div class="dropdown" onmouseenter="playHover()">
+  <input type="checkbox" id="toggle2">
+  <label for="toggle2" class="dropdown-title"><img src="{{ url_for('static', filename='images/playstation 2.jpg') }}" width="50px" height="25px"> Playstation 2</label>
+  
+  <div class="dropdown-content">
+    <header>
+    <h1>PSX 80 Minute Patcher</h1>
+    <h3>Patch PS1/PS2 Games for 700MB CD-R Compatibility</h3>
+</header>
+
+<hr>
+<h2>About</h2>
+<h3>
+PSX80MP is a tool by Alex Free that patches PlayStation game images to work on early PS2 models when burned to 80 minute / 700MB CD-Rs.
+</h3>
+<h3>
+It fixes a hardware bug found in early PS2 consoles that causes crashes or boot failures when using higher capacity discs.
+</h3>
+<hr>
+
+
+<h2>Download</h2>
+<h3><b>Version 2.0.1</b> <span class="badge">Stable</span></h3>
+<ul>
+  <li>
+    <p><a href="https://github.com/alex-free/psx80mp/releases/download/v2.0.1/psx80mp-v2.0.1-windows-i686-static.zip">psx80mp-v2.0.1-windows-i686-static.zip</a> <em>Portable Release For Windows 95 OSR 2.5 and above, Pentium CPU minimum (32 bit)</em></p>
+  </li>
+  <li>
+    <p><a href="https://github.com/alex-free/psx80mp/releases/download/v2.0.1/psx80mp-v2.0.1-windows-x86_64-static.zip">psx80mp-v2.0.1-windows-x86_64-static.zip</a> <em>Portable Release For x86_64 Windows (64 bit)</em></p>
+  </li>
+  <li>
+    <p><a href="https://github.com/alex-free/psx80mp/releases/download/v2.0.1/psx80mp-v2.0.1-linux-i386-static.zip">psx80mp-v2.0.1-linux-i386-static.zip</a> <em>Portable Release For Linux 3.2.0 and above, 386 CPU minimum (32 bit)</em></p>
+  </li>
+  <li>
+    <p><a href="https://github.com/alex-free/psx80mp/releases/download/v2.0.1/psx80mp-v2.0.1-linux-i386-static.deb">psx80mp-v2.0.1-linux-i386-static.deb</a> <em>Deb package file For Linux 3.2.0 and above, 386 CPU minimum (32 bit)</em></p>
+  </li>
+  <li>
+    <p><a href="https://github.com/alex-free/psx80mp/releases/download/v2.0.1/psx80mp-v2.0.1-linux-x86_64-static.zip">psx80mp-v2.0.1-linux-x86_64-static.zip</a> <em>Portable Release For x86_64 Linux 3.2.0 and above (64 bit)</em></p>
+  </li>
+  <li>
+    <p><a href="https://github.com/alex-free/psx80mp/releases/download/v2.0.1/psx80mp-v2.0.1-linux-x86_64-static.deb">psx80mp-v2.0.1-linux-x86_64-static.deb</a> <em>Deb package file for x86_64 Linux 3.2.0 and above (64 bit)</em></p>
+  </li>
+</ul>
+
+<hr>
+
+<h2>How It Works</h2>
+<h3>
+Early PS2 consoles expect lower capacity discs. When using 700MB discs, the laser can overshoot data, causing read errors.
+</h3>
+<h3>
+PSX80MP fixes this by adding dummy data (CDDA silence sectors), preventing the laser from reading invalid areas.
+</h3>
+
+<hr>
+
+<h2>Usage</h2>
+
+<details>
+<summary>Drag & Drop Method</summary>
+<h3>Drag your BIN file onto the executable.</h3>
+</details>
+
+<details>
+<summary>Command Line</summary>
+<h3><code>psx80mp &lt;data_track.bin&gt;</code></h3>
+</details>
+
+<h3><b>Note:</b> Usually patch track 1. If it fails, try track 2.</h3>
+
+<hr>
+
+
+<h2>Confirmed Sensitive Games</h2>
+
+<table>
+<tr>
+<th>Game</th>
+<th>Track</th>
+</tr>
+
+<tr><td>Resident Evil 2 (All Versions)</td><td>1</td></tr>
+<tr><td>Final Fantasy IX (All Regions)</td><td>1</td></tr>
+<tr><td>Diablo (USA)</td><td>1</td></tr>
+<tr><td>MediEvil Series</td><td>1</td></tr>
+<tr><td>JoJo’s Bizarre Adventure</td><td>1</td></tr>
+<tr><td>Street Fighter Alpha 3 (USA)</td><td>2</td></tr>
+
+</table>
+
+<hr>
+
+
+<h2>Why This Matters</h2>
+<h3>
+Previously, users had to rely on smaller CD-Rs (650MB). This tool allows modern 700MB discs to work reliably on affected systems.
+</h3>
+
+<hr>
+
+<h2>Build & Platform Support</h2>
+<ul>
+<li>Windows (32-bit & 64-bit)</li>
+<li>Linux (Deb & Portable)</li>
+<li>Supports very old systems (Pentium / 386 CPUs)</li>
+</ul>
+
+
+<hr>
+
+
+<h3>Made for PlayStation preservation & modding</h3>
+
+  </div>
+ </div>
+
+
+<div class="dropdown" onmouseenter="playHover()">
+  <input type="checkbox" id="toggle3">
+  <label for="toggle3" class="dropdown-title"><img src="{{ url_for('static', filename='images/playstation 3.jpg') }}" width="50px" height="25px"> Playstation 3</label>
+  
+  <div class="dropdown-content">
+    <header>
+    <h1>PS3 HFW + HEN Guide</h1>
+    <h3>Install Hybrid Firmware & Enable Homebrew</h3>
+</header>
+
+
+<hr>
+
+<h2>Step 1: Check Firmware</h2>
+<ul>
+<li>Go to <b>Settings → System Settings → System Information</b></li>
+<li>If version ≤ 4.78 → update required</li>
+<li>If 4.80–4.82 → continue</li>
+<li>If 4.83–4.92 → install HFW</li>
+<li>If > 4.92 → not supported</li>
+</ul>
+
+<hr>
+
+<h2>Step 2: Install HFW</h2>
+<ul>
+<li>Download latest HFW</li>
+<li>Verify MD5 hash</li>
+<li>Install like normal firmware update</li>
+<li>DEX users → install Dual Boot HFW</li>
+</ul>
+
+<hr>
+
+<h2>Step 3: Prepare Browser</h2>
+<ul>
+<li>Open Internet Browser</li>
+<li>Triangle → Tools</li>
+<li>Clear cookies, cache, history</li>
+<li>Set homepage to blank</li>
+</ul>
+
+<hr>
+
+<h2>Install PS3HEN</h2>
+
+<details>
+<summary>Method 1 (ps3xploit)</summary>
+<ul>
+<li>Open browser → go to <code>ps3xploit.me</code></li>
+<li>Add bookmark</li>
+<li>Select <b>PS3HEN → HEN Auto Installer</b></li>
+<li>Wait for download & auto install</li>
+<li>Restart console</li>
+<li>Launch <b>★ Enable HEN</b></li>
+</ul>
+</details>
+<hr>
+<details>
+<summary>Method 2 (ps3addict)</summary>
+<ul>
+<li>Go to <code>ps3addict.github.io</code></li>
+<li>Select Alternate HEN Installer</li>
+<li>Follow on-screen instructions</li>
+<li>Use Remote Play trick</li>
+<li>Install HEN</li>
+</ul>
+</details>
+<hr>
+<details>
+<summary>Method 3 (USB)</summary>
+<ul>
+<li>Download <b>PS3HEN.BIN</b></li>
+<li>Place on FAT32 USB</li>
+<li>Insert into right USB port</li>
+<li>Open browser → visit installer link</li>
+<li>Install and reboot</li>
+</ul>
+</details>
+
+
+<hr>
+
+<h2>After Installation</h2>
+<ul>
+<li>Use <b>★ Enable HEN</b> every boot</li>
+<li>Package Manager will appear</li>
+<li>Install homebrew apps</li>
+<li>Works offline after setup</li>
+</ul>
+
+<hr>
+
+<h2>Troubleshooting</h2>
+
+<details>
+<summary>Error 80710A06</summary>
+<h3>Fix date & time via internet</h3>
+</details>
+
+<details>
+<summary>Error 80029564</summary>
+<h3>Retry installation</h3>
+</details>
+
+<details>
+<summary>Crashes or fails?</summary>
+<h3>Retry multiple times or reinstall HFW</h3>
+</details>
+
+<hr>
+
+
+<h2>Final Notes</h2>
+<h3>
+PS3HEN allows homebrew similar to CFW, but some features like CCAPI are not supported.
+You must enable HEN every time you boot your PS3.
+</h3>
+
+<hr>
+
+
+
+<h3>PS3 Modding Guide • Stay Safe & Follow Steps Carefully</h3>
+
+  </div>
+ </div>
+
+ <div class="dropdown" onmouseenter="playHover()">
+  <input type="checkbox" id="toggle4">
+  <label for="toggle4" class="dropdown-title"><img src="{{ url_for('static', filename='images/playstation 4.jpg') }}" width="50px" height="25px"> Playstation 4</label>
+  
+  <div class="dropdown-content">
+    <header>
+    <h1>PS4 Standard Jailbreak</h1>
+    <h3>Enable Homebrew (FW 5.05 → 9.60)</h3>
+</header>
+
+<hr>
+
+
+<h2>Overview</h2>
+<h3>
+This guide shows how to jailbreak a PS4 using the built-in browser for firmware versions <b>5.05 to 9.60</b>.
+</h3>
+<h3><b>Note:</b> Firmware above 9.60 is not supported by this method.</h3>
+
+
+<hr>
+<h2>Internet Settings</h2>
+
+
+<h2>Some ISPs block custom DNS. If it doesn’t work, use alternative methods.</h2>
+<hr>
+
+<ul>
+<li>Go to <b>Settings → Network → Set Up Internet</b></li>
+<li>Setup: Custom</li>
+<li>IP: Automatic</li>
+<li>DHCP: Do Not Specify</li>
+<li><b>DNS: Manual</b></li>
+<li>Primary DNS: <code>62.210.38.117</code></li>
+<li>MTU: Automatic</li>
+<li>Proxy: Do Not Use</li>
+</ul>
+
+<h3>This blocks Sony servers and redirects to jailbreak pages.</h3>
+
+<hr>
+
+<h2>Method 1: Karo218</h2>
+
+<details>
+<summary>Steps</summary>
+<ul>
+<li>Go to <b>User Guide</b> (via Settings)</li>
+<li>Or open browser → <code>https://karo218.ir</code></li>
+<li>Select exploit site</li>
+<li>Choose:
+    <ul>
+        <li>GoldHEN (5.05 / 6.72)</li>
+        <li>G2All (7.00 → 9.60)</li>
+    </ul>
+</li>
+<li>Wait for exploit</li>
+<li>If successful → "GoldHEN Loaded"</li>
+</ul>
+</details>
+
+<hr>
+
+
+<h2>Method 2: ArabPixel (Recommended)</h2>
+
+<details>
+<summary>Steps</summary>
+<ul>
+<li>Open browser</li>
+<li>Go to <code>https://arabpixel.github.io/PSFree-Enhanced</code></li>
+<li>Wait for caching (✔️ appears)</li>
+<li>Refresh page</li>
+<li>Select GoldHEN / HEN</li>
+<li>Press Start</li>
+<li>Wait for success message</li>
+</ul>
+</details>
+
+<h3>Works offline after first run.</h3>
+
+
+<hr>
+
+<h2>Troubleshooting</h2>
+
+<details>
+<summary>Not enough memory</summary>
+<h3>Press OK and try again. Very common.</h3>
+</details>
+<hr>
+<details>
+<summary>Console rebooted</summary>
+<h3>Normal. Just retry the exploit.</h3>
+</details>
+<hr>
+<details>
+<summary>Apps won’t open after reboot</summary>
+<h3>You must jailbreak again after every reboot.</h3>
+</details>
+<hr>
+<details>
+<summary>Black screen / freeze</summary>
+<h3>Hold power button to shut down and retry.</h3>
+</details>
+<hr>
+
+
+
+<h2>Important Notes</h2>
+<ul>
+<li>Jailbreak is <b>not permanent</b></li>
+<li>Use <b>Rest Mode</b> to avoid redoing it</li>
+<li>Completely safe — won’t damage your PS4</li>
+<li>Blocks updates (with DNS)</li>
+</ul>
+
+
+<hr>
+
+<h3>PS4 Modding Guide • Use Responsibly</h3>
+
+    
+  </div>
+ </div>
+
+ <div class="dropdown" onmouseenter="playHover()">
+  <input type="checkbox" id="toggle5">
+  <label for="toggle5" class="dropdown-title"><img src="{{ url_for('static', filename='images/playstation 5.jpg') }}" width="50px" height="25px"> playstation 5</label>
+  
+  <div class="dropdown-content">
+    <header>
+    <h1>PS5 Jailbreak Guide</h1>
+    <h3>Current Status & Exploits (FW ≤ 5.50)</h3>
+</header>
+
+
+<hr>
+
+<h2>Overview</h2>
+<p>
+PS5 jailbreak is currently available for firmware <b>5.50 and below</b> using kernel exploits.
+</p>
+<p>
+Lower firmware versions (especially ≤ 4.51) have the best support including homebrew and backups.
+</p>
+
+<hr>
+
+<h2>Supported Firmware</h2>
+<ul>
+<li><b>1.00 → 4.51</b> <span class="badge">Best Support</span></li>
+<li><b>5.10 → 5.50</b> Partial support</li>
+<li><b>Above 5.50</b> Not supported</li>
+</ul>
+
+<hr>
+
+<h2>Kernel Exploits</h2>
+
+<details>
+<summary>UMTX Exploit (1.00 → 5.50)</summary>
+<ul>
+<li>Based on FreeBSD vulnerability (2024)</li>
+<li>Supports firmware 1.00 → 5.50</li>
+<li>Full jailbreak via <b>etaHEN</b> on ≤ 4.51</li>
+<li>5.00+ still improving</li>
+</ul>
+</details>
+<hr>
+<details>
+<summary>IPV6 Exploit (3.00 → 4.51)</summary>
+<ul>
+<li>Released in 2022</li>
+<li>Gives full kernel access</li>
+<li>Works best on 4.03 / 4.50 / 4.51</li>
+</ul>
+</details>
+<hr>
+
+
+
+<h2>Other Exploits (Not Full Jailbreak)</h2>
+
+<details>
+<summary>BD-JB Exploit (≤ 7.61)</summary>
+<h3>Allows limited native code execution via Blu-ray vulnerability.</h3>
+</details>
+<hr>
+<details>
+<summary>Mast1c0re Exploit (≤ 7.60)</summary>
+<h3>Runs PS2 ISOs and homebrew via PS2 emulator.</h3>
+</details>
+
+<hr>
+
+
+<h2>Entry Points</h2>
+<ul>
+<li>WebKit exploit (browser-based)</li>
+<li>Blu-ray exploit (disc-based)</li>
+<li>ESP8266 host method</li>
+</ul>
+
+<hr>
+<h2>⚠️ Scam Warning</h2>
+
+
+<h2>If a website claims a jailbreak for the latest PS5 firmware — it is almost always fake.</h2>
+
+
+<ul>
+<li>Real exploits are publicly known in the scene</li>
+<li>Fake sites use ads or malware</li>
+<li>If it sounds too good → it’s a scam</li>
+</ul>
+
+<hr>
+
+
+<h2>Known Vulnerabilities Timeline</h2>
+<ul>
+<li>2024 – UMTX Kernel Vulnerability</li>
+<li>2023 – Hypervisor exploit</li>
+<li>2022 – Mast1c0re exploit</li>
+<li>2022 – Kernel + WebKit exploit</li>
+<li>2022 – IPv6 exploit</li>
+<li>2021 – WebKit font exploit</li>
+<li>2020 – SMAP bypass</li>
+</ul>
+
+<hr>
+
+<h2>Buying a Hackable PS5</h2>
+<h3>
+Look for consoles with firmware ≤ 4.51 for best compatibility.
+</h3>
+<h3>
+Avoid updating firmware after purchase.
+</h3>
+
+
+<hr>
+
+
+<h3>PS5 Modding Guide • Stay Updated & Avoid Scams</h3>
+
+
+    
+  </div>
+ </div>
+
+ <div class="dropdown" onmouseenter="playHover()">
+  <input type="checkbox" id="toggle6">
+  <label for="toggle6" class="dropdown-title"><img src="{{ url_for('static', filename='images/vita.jpg') }}" width="50px" height="25px"> PS Vita</label>
+  
+  <div class="dropdown-content">
+    <header>
+    <h1>PS Vita HENkaku Guide</h1>
+    <h3>Unlock Homebrew & Custom Firmware</h3>
+</header>
+
+
+<hr>
+
+<h2>Overview</h2>
+<h3>
+All PS Vita models can be hacked using HENkaku. This allows homebrew, plugins, and custom firmware features.
+</h3>
+<h3>
+By default, the jailbreak is <b>not permanent</b>, but installing <b>Ensō</b> makes it persistent.
+</h3>
+
+<hr>
+<h2>Check Firmware</h2>
+<ul>
+<li>Go to <b>Settings → System → System Information</b></li>
+<li>Check firmware version</li>
+</ul>
+<hr>
+<details>
+<summary>Firmware Cases</summary>
+<ul>
+<li><b>3.63 or older / 3.67 / 3.69–3.73</b> → Update to 3.74</li>
+<li><b>3.60 / 3.65 (Chinese text)</b> → Already modded</li>
+<li><b>3.65 / 3.68 / 3.74</b> → Continue with HENlo</li>
+</ul>
+</details>
+<hr>
+
+
+
+<h2>HENlo Jailbreak</h2>
+
+<details>
+<summary>Steps</summary>
+<ul>
+<li>Open browser → <code>http://jailbreak.psp2.dev</code></li>
+<li>Enable JavaScript</li>
+<li>Clear cookies & history</li>
+<li>Press <b>Unlock My Vita</b></li>
+<li>Install:
+    <ul>
+        <li>HENkaku</li>
+        <li>VitaDeploy</li>
+    </ul>
+</li>
+<li>Exit to LiveArea</li>
+</ul>
+</details>
+<hr>
+
+
+
+<h2>Special Cases</h2>
+
+<details>
+<summary>PCH-1xxx without Memory Card</summary>
+<h3>Use "Replace NEAR with VitaDeploy" option.</h3>
+</details>
+<hr>
+<details>
+<summary>South Korean Models</summary>
+<h3>Use SD2Vita as internal storage.</h3>
+</details>
+
+<hr>
+
+
+<h2>Post Setup</h2>
+<ul>
+<li>Open Settings → HENkaku settings</li>
+<li>Enable <b>Unsafe Homebrew</b></li>
+<li>Optional: Spoof firmware to 3.74</li>
+</ul>
+<hr>
+<h2>Internal Memory Setup</h2>
+
+<details>
+<summary>Create Internal Storage</summary>
+<ul>
+<li>Open VitaDeploy</li>
+<li>Go to Miscellaneous</li>
+<li>Select Create Internal Memory Card</li>
+<li>Restart device</li>
+</ul>
+</details>
+
+<hr>
+
+
+<h2>Install Ensō (Permanent Hack)</h2>
+
+<details>
+<summary>Steps</summary>
+<ul>
+<li>Open VitaDeploy</li>
+<li>Select Install a different OS</li>
+<li>Follow instructions</li>
+<li>Do not let device sleep</li>
+<li>System will downgrade to 3.65</li>
+</ul>
+</details>
+
+<h3>Ensō makes the jailbreak permanent.</h3>
+<hr>
+
+
+
+<h2>Important Notes</h2>
+<ul>
+<li>All Vita models are hackable</li>
+<li>Ensō = permanent jailbreak</li>
+<li>Without Ensō → must rerun exploit</li>
+<li>Do not interrupt install process</li>
+</ul>
+
+
+<hr>
+
+
+<h3>PS Vita Modding Guide • Safe & Powerful Homebrew</h3>
+
+
+
+
+    
+  </div>
+ </div>
+
+ <div class="dropdown" onmouseenter="playHover()">
+
+  <input type="checkbox" id="toggle7">
+  <label for="toggle7" class="dropdown-title"><img src="{{ url_for('static', filename='images/psp.jpg') }}" width="50px" height="25px"> PSP</label>
+  
+  <div class="dropdown-content">
+    <header>
+    <h1>PSP ARK-4 CFW Guide</h1>
+    <h3>Install Modern Custom Firmware</h3>
+</header>
+
+<hr>
+
+
+<h2>Overview</h2>
+<h3>
+ARK-4 is the most modern custom firmware for PSP, offering enhanced compatibility, features, and performance.
+</h3>
+<h3>
+It can be installed as <b>temporary</b> or <b>permanent</b> (recommended).
+</h3>
+
+<hr>
+
+<h2>Requirements</h2>
+<ul>
+<li>Firmware <b>6.60 or 6.61</b></li>
+<li>Memory Stick or internal storage</li>
+<li>USB connection to PC</li>
+</ul>
+
+<hr>
+
+<h2>Install Temporary CFW</h2>
+
+<details>
+<summary>Steps</summary>
+<ul>
+<li>Download ARK-4</li>
+<li>Connect PSP via USB</li>
+<li>Extract:
+    <ul>
+        <li><code>ARK_01234 → PSP/SAVEDATA</code></li>
+        <li><code>ARK_Loader → PSP/GAME</code></li>
+    </ul>
+</li>
+<li>Launch ARK Loader from Game menu</li>
+<li>PSP will restart with CFW enabled</li>
+</ul>
+</details>
+
+<h3><b>Note:</b> Temporary CFW must be launched again after reboot.</h3>
+
+<hr>
+
+
+<h2>ARK-4 Features</h2>
+<ul>
+<li>Supports PRO Online & XLink Kai</li>
+<li>NoDRM engine for ISO games</li>
+<li>PS1 game support with configs</li>
+<li>Region-free UMD playback</li>
+<li>Custom launcher included</li>
+<li>Supports legacy homebrew</li>
+<li>cIPL support on all PSP models</li>
+</ul>
+
+<hr>
+
+<h2>Install Permanent CFW (cIPL)</h2>
+
+<details>
+<summary>Steps</summary>
+<ul>
+<li>Copy <code>ARK_cIPL</code> to PSP</li>
+<li>Launch cIPL installer</li>
+<li>Select <b>New cIPL</b></li>
+<li>Done — CFW loads on boot</li>
+</ul>
+</details>
+
+<h3>This method enables automatic CFW at startup.</h3>
+
+<hr>
+
+
+<h2>Full Flash Installation</h2>
+
+<details>
+<summary>Steps</summary>
+<ul>
+<li>Copy <code>ARK_Full_Installer</code></li>
+<li>Run installer</li>
+<li>Follow on-screen instructions</li>
+</ul>
+</details>
+
+<h3>
+This installs ARK-4 directly to internal memory, removing reliance on save files.
+</h3>
+
+<hr>
+
+
+<h2>Other CFW Options</h2>
+
+<details>
+<summary>PRO CFW</summary>
+<h3>Popular, supports online play and plugins.</h3>
+</details>
+<hr>
+<details>
+<summary>(L)ME CFW</summary>
+<h3>Faster install, supports legacy homebrew via LEDA.</h3>
+</details>
+
+
+<hr>
+<h2>Important Notes</h2>
+<ul>
+<li>Temporary CFW resets after reboot</li>
+<li>cIPL = best permanent option</li>
+<li>Full flash removes dependency on save files</li>
+<li>PSP Go has internal storage advantage</li>
+</ul>
+
+
+
+<hr>
+
+<h3>PSP Modding Guide • Modern CFW Made Easy</h3>
+
+  </div>
+ </div>
+</div>
+
+ <div class="section">
+  <h2>Nintendo</h2>
+ <div class="dropdown" onmouseenter="playHover()">
+
+  <input type="checkbox" id="toggle8">
+  <label for="toggle8" class="dropdown-title">NES</label>
+
+<div class="dropdown-content">
+<header>
+<h1>Applying ROM Patches</h1>
+<h3>How to Patch Games Across Different Systems</h3>
+</header>
+
+<hr>
+
+<h2>Overview</h2>
+<h3>
+Many consoles with interchangeable games support community-made ROM patches and hacks.
+</h3>
+<h3>
+These patches modify games using different tools depending on the patch format.
+</h3>
+<h3>
+Most ROM hacks can be found on <b>ROMhacking.net</b>.
+</h3>
+
+<hr>
+
+<h2>IPS Patches</h2>
+
+<details>
+<summary>Steps</summary>
+<ul>
+<li>Download Lunar IPS and launch it</li>
+<li>Extract the <code>.ips</code> file if compressed</li>
+<li>Click <b>Apply IPS Patch</b></li>
+<li>Select the <code>.ips</code> file</li>
+<li>Select your game ROM</li>
+<li>Success message should appear</li>
+</ul>
+</details>
+
+<h3>
+IPS patches are simple and do not verify if the correct ROM is used.
+</h3>
+<h3>
+They are limited to <b>16MB</b> patch size.
+</h3>
+
+<hr>
+
+<h2>BPS Patches</h2>
+
+<details>
+<summary>Steps</summary>
+<ul>
+<li>Download Beat v1 and launch it</li>
+<li>Extract the <code>.bps</code> or <code>.bpm</code> file</li>
+<li>Click <b>Apply Patch</b></li>
+<li>Select the patch file</li>
+<li>Select your ROM</li>
+<li>Choose output location and name</li>
+</ul>
+</details>
+
+<h3>
+BPS patches include safety checks to ensure correct ROM matching.
+</h3>
+
+<hr>
+
+<h2>PPF Patches</h2>
+
+<details>
+<summary>Steps</summary>
+<ul>
+<li>Ensure you have a single <code>.bin</code> or <code>.iso</code> file</li>
+<li>Make a backup of your game file</li>
+<li>Extract the <code>.ppf</code> file</li>
+<li>Download and open PPF-O-MATIC</li>
+<li>Select your game file</li>
+<li>Select the patch file</li>
+<li>Click <b>Apply</b></li>
+</ul>
+</details>
+
+<h3>
+Used mainly for PlayStation and PS2 games, but also works on other systems.
+</h3>
+<h3>
+Multi-track games must be merged using tools like <b>Binmerge</b>.
+</h3>
+
+<hr>
+
+<h2>xdelta Patches</h2>
+
+<details>
+<summary>Steps</summary>
+<ul>
+<li>Extract the <code>.xdelta</code> file</li>
+<li>Download and open Delta Patcher</li>
+<li>Select your original ROM</li>
+<li>Select the patch file</li>
+<li>Click <b>Apply patch</b></li>
+</ul>
+</details>
+
+<h3>
+xdelta patches are widely used across many systems and support advanced patching.
+</h3>
+
+<hr>
+
+<h2>Troubleshooting</h2>
+<ul>
+<li>Ensure you are using the correct ROM version</li>
+<li>Check for multiple game revisions</li>
+<li>Verify checksum or hash if provided</li>
+<li>Wrong ROM = patch will fail</li>
+</ul>
+
+<hr>
+
+<h3>ROM Modding Guide • Patch Your Games Easily</h3>
+   </div>
+  </div>
+ <div class="dropdown" onmouseenter="playHover()">
+
+  <input type="checkbox" id="toggle9">
+  <label for="toggle9" class="dropdown-title">SNES</label>
+
+<div class="dropdown-content">
+<header>
+<h1>Applying ROM Patches</h1>
+<h3>How to Patch Games Across Different Systems</h3>
+</header>
+
+<hr>
+
+<h2>Overview</h2>
+<h3>
+Many consoles with interchangeable games support community-made ROM patches and hacks.
+</h3>
+<h3>
+These patches modify games using different tools depending on the patch format.
+</h3>
+<h3>
+Most ROM hacks can be found on <b>ROMhacking.net</b>.
+</h3>
+
+<hr>
+
+<h2>IPS Patches</h2>
+
+<details>
+<summary>Steps</summary>
+<ul>
+<li>Download Lunar IPS and launch it</li>
+<li>Extract the <code>.ips</code> file if compressed</li>
+<li>Click <b>Apply IPS Patch</b></li>
+<li>Select the <code>.ips</code> file</li>
+<li>Select your game ROM</li>
+<li>Success message should appear</li>
+</ul>
+</details>
+
+<h3>
+IPS patches are simple and do not verify if the correct ROM is used.
+</h3>
+<h3>
+They are limited to <b>16MB</b> patch size.
+</h3>
+
+<hr>
+
+<h2>BPS Patches</h2>
+
+<details>
+<summary>Steps</summary>
+<ul>
+<li>Download Beat v1 and launch it</li>
+<li>Extract the <code>.bps</code> or <code>.bpm</code> file</li>
+<li>Click <b>Apply Patch</b></li>
+<li>Select the patch file</li>
+<li>Select your ROM</li>
+<li>Choose output location and name</li>
+</ul>
+</details>
+
+<h3>
+BPS patches include safety checks to ensure correct ROM matching.
+</h3>
+
+<hr>
+
+<h2>PPF Patches</h2>
+
+<details>
+<summary>Steps</summary>
+<ul>
+<li>Ensure you have a single <code>.bin</code> or <code>.iso</code> file</li>
+<li>Make a backup of your game file</li>
+<li>Extract the <code>.ppf</code> file</li>
+<li>Download and open PPF-O-MATIC</li>
+<li>Select your game file</li>
+<li>Select the patch file</li>
+<li>Click <b>Apply</b></li>
+</ul>
+</details>
+
+<h3>
+Used mainly for PlayStation and PS2 games, but also works on other systems.
+</h3>
+<h3>
+Multi-track games must be merged using tools like <b>Binmerge</b>.
+</h3>
+
+<hr>
+
+<h2>xdelta Patches</h2>
+
+<details>
+<summary>Steps</summary>
+<ul>
+<li>Extract the <code>.xdelta</code> file</li>
+<li>Download and open Delta Patcher</li>
+<li>Select your original ROM</li>
+<li>Select the patch file</li>
+<li>Click <b>Apply patch</b></li>
+</ul>
+</details>
+
+<h3>
+xdelta patches are widely used across many systems and support advanced patching.
+</h3>
+
+<hr>
+
+<h2>Troubleshooting</h2>
+<ul>
+<li>Ensure you are using the correct ROM version</li>
+<li>Check for multiple game revisions</li>
+<li>Verify checksum or hash if provided</li>
+<li>Wrong ROM = patch will fail</li>
+</ul>
+
+<hr>
+
+<h3>ROM Modding Guide • Patch Your Games Easily</h3>
+</div>
+</div>
+ <div class="dropdown" onmouseenter="playHover()">
+
+  <input type="checkbox" id="toggle10">
+  <label for="toggle10" class="dropdown-title">Nintendo 64</label>
+
+<div class="dropdown-content">
+<header>
+<h1>Applying ROM Patches</h1>
+<h3>How to Patch Games Across Different Systems</h3>
+</header>
+
+<hr>
+
+<h2>Overview</h2>
+<h3>
+Many consoles with interchangeable games support community-made ROM patches and hacks.
+</h3>
+<h3>
+These patches modify games using different tools depending on the patch format.
+</h3>
+<h3>
+Most ROM hacks can be found on <b>ROMhacking.net</b>.
+</h3>
+
+<hr>
+
+<h2>IPS Patches</h2>
+
+<details>
+<summary>Steps</summary>
+<ul>
+<li>Download Lunar IPS and launch it</li>
+<li>Extract the <code>.ips</code> file if compressed</li>
+<li>Click <b>Apply IPS Patch</b></li>
+<li>Select the <code>.ips</code> file</li>
+<li>Select your game ROM</li>
+<li>Success message should appear</li>
+</ul>
+</details>
+
+<h3>
+IPS patches are simple and do not verify if the correct ROM is used.
+</h3>
+<h3>
+They are limited to <b>16MB</b> patch size.
+</h3>
+
+<hr>
+
+<h2>BPS Patches</h2>
+
+<details>
+<summary>Steps</summary>
+<ul>
+<li>Download Beat v1 and launch it</li>
+<li>Extract the <code>.bps</code> or <code>.bpm</code> file</li>
+<li>Click <b>Apply Patch</b></li>
+<li>Select the patch file</li>
+<li>Select your ROM</li>
+<li>Choose output location and name</li>
+</ul>
+</details>
+
+<h3>
+BPS patches include safety checks to ensure correct ROM matching.
+</h3>
+
+<hr>
+
+<h2>PPF Patches</h2>
+
+<details>
+<summary>Steps</summary>
+<ul>
+<li>Ensure you have a single <code>.bin</code> or <code>.iso</code> file</li>
+<li>Make a backup of your game file</li>
+<li>Extract the <code>.ppf</code> file</li>
+<li>Download and open PPF-O-MATIC</li>
+<li>Select your game file</li>
+<li>Select the patch file</li>
+<li>Click <b>Apply</b></li>
+</ul>
+</details>
+
+<h3>
+Used mainly for PlayStation and PS2 games, but also works on other systems.
+</h3>
+<h3>
+Multi-track games must be merged using tools like <b>Binmerge</b>.
+</h3>
+
+<hr>
+
+<h2>xdelta Patches</h2>
+
+<details>
+<summary>Steps</summary>
+<ul>
+<li>Extract the <code>.xdelta</code> file</li>
+<li>Download and open Delta Patcher</li>
+<li>Select your original ROM</li>
+<li>Select the patch file</li>
+<li>Click <b>Apply patch</b></li>
+</ul>
+</details>
+
+<h3>
+xdelta patches are widely used across many systems and support advanced patching.
+</h3>
+
+<hr>
+
+<h2>Troubleshooting</h2>
+<ul>
+<li>Ensure you are using the correct ROM version</li>
+<li>Check for multiple game revisions</li>
+<li>Verify checksum or hash if provided</li>
+<li>Wrong ROM = patch will fail</li>
+</ul>
+
+<hr>
+
+<h3>ROM Modding Guide • Patch Your Games Easily</h3>
+</div>
+ </div>
+ <div class="dropdown" onmouseenter="playHover()">
+
+  <input type="checkbox" id="toggle11">
+  <label for="toggle11" class="dropdown-title">GameCube</label>
+
+<div class="dropdown-content">
+<header>
+<h1>Swiss FTP</h1>
+<h3>Transfer Files from PC to Console Using FTP</h3>
+</header>
+
+<hr>
+
+<h2>Overview</h2>
+<h3>
+Swiss includes a built-in FTP client that allows you to download files directly from your PC to your console.
+</h3>
+<h3>
+Unlike most systems, Swiss connects <b>to your PC</b> instead of acting as a server.
+</h3>
+
+<hr>
+
+<h2>Setup FTP Server</h2>
+
+<details>
+<summary>Steps</summary>
+<ul>
+<li>Create a folder on your PC to store files</li>
+<li>Download and run <code>xlight.exe</code></li>
+<li>Allow firewall access on private network if prompted</li>
+<li>Click <b>New Virtual Server</b> → OK</li>
+<li>Open the server → go to <b>Public Path</b></li>
+<li>Add:
+    <ul>
+        <li><b>Virtual Path:</b> /</li>
+        <li><b>Real Path:</b> Your folder location</li>
+        <li><b>Permissions:</b> Enable all</li>
+    </ul>
+</li>
+</ul>
+</details>
+
+<hr>
+
+<h2>Create User</h2>
+
+<details>
+<summary>Steps</summary>
+<ul>
+<li>Click <b>User List</b> → Add</li>
+<li>Set username & password (e.g. gamecube)</li>
+<li>Set home directory to <code>/</code></li>
+<li>Enable all permissions</li>
+<li>Click OK to save</li>
+</ul>
+</details>
+
+<hr>
+
+<h2>Start Server</h2>
+
+<details>
+<summary>Steps</summary>
+<ul>
+<li>Select your server</li>
+<li>Click <b>Run Server</b></li>
+<li>Right-click → <b>Server Network Interfaces</b></li>
+<li>Note your PC IP (e.g. 192.168.0.5)</li>
+</ul>
+</details>
+
+<hr>
+
+<h2>Connect in Swiss</h2>
+
+<details>
+<summary>Steps</summary>
+<ul>
+<li>Open Swiss network settings</li>
+<li>Set <b>FTP Host IP</b> to your PC IP</li>
+<li>Enter username and password</li>
+<li>Press <b>B</b> then <b>A</b> to change device</li>
+<li>Select <b>File Transfer Protocol</b></li>
+<li>Connection should show your PC files</li>
+</ul>
+</details>
+
+<hr>
+
+<h2>Important Notes</h2>
+<ul>
+<li>PC and console must be on same network</li>
+<li>Firewall must allow FTP server</li>
+<li>Correct IP is required for connection</li>
+<li>Swiss acts as client, not server</li>
+</ul>
+
+<hr>
+
+<h3>GameCube Swiss Guide • Easy File Transfer via FTP</h3>
+</div>
+</div>
+ <div class="dropdown" onmouseenter="playHover()">
+
+  <input type="checkbox" id="toggle12">
+  <label for="toggle12" class="dropdown-title">GameBoy</label>
+
+<div class="dropdown-content">
+<header>
+<h1>Playing Game Backups/Game ROM homebrews</h1>
+<h3>Use Flash Carts to Run Your Game Boy ROMs</h3>
+</header>
+
+<hr>
+
+<h2>Overview</h2>
+<h3>
+To play Game Boy backups, you need a compatible flash cartridge and an SD card.
+</h3>
+<h3>
+The SD card must be formatted to <b>FAT32</b>.
+</h3>
+
+<hr>
+
+<h2>Requirements</h2>
+<ul>
+<li>Flash cart (Everdrive GB or EZ-Flash Jr)</li>
+<li>FAT32 formatted SD card</li>
+<li>Game Boy console</li>
+</ul>
+
+<hr>
+
+<h2>Everdrive GB</h2>
+
+<details>
+<summary>Setup Steps</summary>
+<ul>
+<li>Download latest firmware from Krikzz website</li>
+<li>Extract and copy <code>GBCSYS</code> folder to SD root</li>
+<li>Insert SD into Everdrive and power on Game Boy</li>
+<li>Wait until file manager appears</li>
+<li>Turn off and reinsert SD into PC</li>
+<li>Copy ROMs into folders (e.g. <code>roms</code>, <code>GB</code>, <code>GBC</code>)</li>
+</ul>
+</details>
+
+<h3>
+Everdrive provides a simple file manager for launching games.
+</h3>
+
+<hr>
+
+<h2>EZ-Flash Jr</h2>
+
+<details>
+<summary>Setup Steps</summary>
+<ul>
+<li>Download kernel and firmware from EZ-Flash website</li>
+<li>Extract <code>ezgb.dat</code> and <code>Update_FWx.gb</code> to SD root</li>
+<li>Copy ROMs into folders (e.g. <code>roms</code>, <code>GB</code>, <code>GBC</code>)</li>
+<li>Insert SD into EZ-Flash Jr and power on Game Boy</li>
+<li>Launch <code>Update_FWx.gb</code></li>
+<li>Press <b>A</b> to start update</li>
+<li>Restart system after update completes</li>
+<li>Select and play your games</li>
+</ul>
+</details>
+
+<h3>
+Firmware update is required before first use.
+</h3>
+
+<hr>
+
+<h2>Important Notes</h2>
+<ul>
+<li>SD card must be FAT32 formatted</li>
+<li>Organize ROMs into folders for easy access</li>
+<li>Always safely eject SD card from PC</li>
+<li>Firmware updates may improve compatibility</li>
+</ul>
+
+<hr>
+
+<h3>Game Boy Guide • Play Your Backups Easily</h3>
+</div>
+</div>
+ <div class="dropdown" onmouseenter="playHover()">
+
+  <input type="checkbox" id="toggle13">
+  <label for="toggle13" class="dropdown-title">GameBoy Advenced</label>
+
+<div class="dropdown-content">
+<header>
+<h1>Applying ROM Patches</h1>
+<h3>How to Patch Games Across Different Systems</h3>
+</header>
+
+<hr>
+
+<h2>Overview</h2>
+<h3>
+Many consoles with interchangeable games support community-made ROM patches and hacks.
+</h3>
+<h3>
+These patches modify games using different tools depending on the patch format.
+</h3>
+<h3>
+Most ROM hacks can be found on <b>ROMhacking.net</b>.
+</h3>
+
+<hr>
+
+<h2>IPS Patches</h2>
+
+<details>
+<summary>Steps</summary>
+<ul>
+<li>Download Lunar IPS and launch it</li>
+<li>Extract the <code>.ips</code> file if compressed</li>
+<li>Click <b>Apply IPS Patch</b></li>
+<li>Select the <code>.ips</code> file</li>
+<li>Select your game ROM</li>
+<li>Success message should appear</li>
+</ul>
+</details>
+
+<h3>
+IPS patches are simple and do not verify if the correct ROM is used.
+</h3>
+<h3>
+They are limited to <b>16MB</b> patch size.
+</h3>
+
+<hr>
+
+<h2>BPS Patches</h2>
+
+<details>
+<summary>Steps</summary>
+<ul>
+<li>Download Beat v1 and launch it</li>
+<li>Extract the <code>.bps</code> or <code>.bpm</code> file</li>
+<li>Click <b>Apply Patch</b></li>
+<li>Select the patch file</li>
+<li>Select your ROM</li>
+<li>Choose output location and name</li>
+</ul>
+</details>
+
+<h3>
+BPS patches include safety checks to ensure correct ROM matching.
+</h3>
+
+<hr>
+
+<h2>PPF Patches</h2>
+
+<details>
+<summary>Steps</summary>
+<ul>
+<li>Ensure you have a single <code>.bin</code> or <code>.iso</code> file</li>
+<li>Make a backup of your game file</li>
+<li>Extract the <code>.ppf</code> file</li>
+<li>Download and open PPF-O-MATIC</li>
+<li>Select your game file</li>
+<li>Select the patch file</li>
+<li>Click <b>Apply</b></li>
+</ul>
+</details>
+
+<h3>
+Used mainly for PlayStation and PS2 games, but also works on other systems.
+</h3>
+<h3>
+Multi-track games must be merged using tools like <b>Binmerge</b>.
+</h3>
+
+<hr>
+
+<h2>xdelta Patches</h2>
+
+<details>
+<summary>Steps</summary>
+<ul>
+<li>Extract the <code>.xdelta</code> file</li>
+<li>Download and open Delta Patcher</li>
+<li>Select your original ROM</li>
+<li>Select the patch file</li>
+<li>Click <b>Apply patch</b></li>
+</ul>
+</details>
+
+<h3>
+xdelta patches are widely used across many systems and support advanced patching.
+</h3>
+
+<hr>
+
+<h2>Troubleshooting</h2>
+<ul>
+<li>Ensure you are using the correct ROM version</li>
+<li>Check for multiple game revisions</li>
+<li>Verify checksum or hash if provided</li>
+<li>Wrong ROM = patch will fail</li>
+</ul>
+
+<hr>
+
+<h3>ROM Modding Guide • Patch Your Games Easily</h3>
+</div>
+</div>
+ <div class="dropdown" onmouseenter="playHover()">
+
+  <input type="checkbox" id="toggle14">
+  <label for="toggle14" class="dropdown-title">DSi</label>
+
+<div class="dropdown-content">
+<header>
+<h1>Get started</h1>
+<h3>Prepare Your DSi for Homebrew & Exploits</h3>
+</header>
+
+<hr>
+
+<h2>Overview</h2>
+<h3>
+This guide helps you prepare your DSi by setting up required tools before running exploits.
+</h3>
+<h3>
+You will download homebrew tools and copy them to your SD card.
+</h3>
+
+<hr>
+
+<h2>Requirements</h2>
+<ul>
+<li>SD card and a way to connect it to your PC</li>
+<li>Archive extractor:
+    <ul>
+        <li>7-Zip (Windows)</li>
+        <li>The Unarchiver (macOS)</li>
+        <li>ZArchiver (Chromebook)</li>
+    </ul>
+</li>
+<li><b>Avoid using WinRAR</b> (can break files)</li>
+<li><b>Avoid Windows 11 built-in extractor</b> (can cause errors)</li>
+</ul>
+
+<hr>
+
+<h2>Section I - Prep Work</h2>
+
+<details>
+<summary>Steps</summary>
+<ul>
+<li>Insert SD card into your PC</li>
+<li>Ensure SD card is properly formatted</li>
+<li>Download latest <code>dumpTool</code> as <code>boot.nds</code></li>
+<li>Copy <code>boot.nds</code> to the root of your SD card</li>
+</ul>
+</details>
+
+<h3>
+The SD card root is the main directory (not inside any folder).
+</h3>
+
+<hr>
+
+<h2>Section II - Check Unlaunch</h2>
+
+<details>
+<summary>Steps</summary>
+<ul>
+<li>Turn on DSi while holding <b>A + B</b></li>
+<li>If Unlaunch menu appears → already installed</li>
+<li>If normal DSi Menu appears → continue to next section</li>
+</ul>
+</details>
+
+<h3>
+Unlaunch is a boot-level exploit that gives full control of the console.
+</h3>
+<h3>
+Some used/refurbished DSi systems may already have it installed.
+</h3>
+
+<hr>
+
+<h2>Section III - Memory Pit</h2>
+
+<details>
+<summary>Details</summary>
+<ul>
+<li>Uses DSi Camera as an exploit</li>
+<li>Works on all firmware versions</li>
+<li>No need to install Unlaunch</li>
+</ul>
+</details>
+
+<h3>
+Memory Pit is simple but may have limited compatibility with some homebrew.
+</h3>
+<h3>
+If issues occur, consider installing Unlaunch instead.
+</h3>
+
+<hr>
+
+<h2>Next Step</h2>
+<h3>
+Continue to <b>Launching the Exploit</b> to proceed with the setup.
+</h3>
+
+<hr>
+
+<h3>DSi Modding Guide • Start Your Homebrew Journey</h3>
+</div>
+</div>
+<div class="dropdown" onmouseenter="playHover()">
+
+  <input type="checkbox" id="toggle16">
+  <label for="toggle16" class="dropdown-title">Nintendo Switch</label>
+
+<div class="dropdown-content">
+<header>
+<h1>Installing Custom Firmware (CFW)</h1>
+<h3>Extend Your Nintendo Switch Functionality</h3>
+</header>
+
+<hr>
+
+<h2>Overview</h2>
+<h3>
+This guide covers setting up Custom Firmware (CFW) on the Nintendo Switch to enable homebrew and advanced features.
+</h3>
+<h3>
+CFW is not permanently installed and must be launched each time depending on your console type.
+</h3>
+
+<hr>
+
+<h2>Section I - Check Exploit Compatibility</h2>
+
+<details>
+<summary>Details</summary>
+<ul>
+<li>Check model number on the back of the console</li>
+<li><b>Patched models (require modchip):</b>
+<ul>
+<li>HAC-001(-01) (Switch v2)</li>
+<li>HDH-001 (Switch Lite)</li>
+<li>HEG-001 (Switch OLED)</li>
+</ul>
+</li>
+<li><b>Unpatched model:</b> HAC-001 (2017–2019)</li>
+<li>Serial number can help determine exploitability</li>
+<li>Modchipped consoles show "No SD card" screen without SD card</li>
+</ul>
+</details>
+
+<hr>
+
+<h2>Section II - Requirements</h2>
+
+<details>
+<summary>What You Need</summary>
+<ul>
+<li>Latest version of <code>Atmosphere</code> (CFW)</li>
+<li><code>fusee.bin</code> payload file</li>
+<li>Latest version of <code>Hekate</code></li>
+<li>microSD card (minimum 8GB, recommended 64GB+)</li>
+<li>USB SD card reader</li>
+</ul>
+</details>
+
+<h3>
+Atmosphere enables homebrew, while Hekate provides tools like NAND backup and boot management.
+</h3>
+
+<hr>
+
+<h2>Section III - File Setup</h2>
+
+<details>
+<summary>Steps</summary>
+<ul>
+<li>Insert microSD card into PC using reader</li>
+<li>Extract files to SD card root:
+<ul>
+<li><code>atmosphere</code></li>
+<li><code>bootloader</code></li>
+<li><code>switch</code></li>
+<li><code>hekate_ctcaer_x.x.x.bin</code></li>
+</ul>
+</li>
+<li>Place <code>fusee.bin</code> into <code>bootloader/payloads</code></li>
+<li><b>Modchipped:</b> Rename hekate file to <code>payload.bin</code></li>
+<li><b>Unpatched:</b> Delete hekate file after use</li>
+<li>Safely eject SD card and insert into Switch</li>
+</ul>
+</details>
+
+<hr>
+
+<h2>Section IV - Finalizing Setup</h2>
+
+<details>
+<summary>Steps</summary>
+<ul>
+<li>Boot into Hekate (auto for modchip, manual for unpatched)</li>
+<li>Go to <b>Tools → Backup eMMC</b></li>
+<li>Backup:
+<ul>
+<li>BOOT0 & BOOT1</li>
+<li>RAW GPP (full NAND)</li>
+</ul>
+</li>
+<li>Transfer backup to a safe location</li>
+<li>Delete NAND backup from SD card to free space</li>
+</ul>
+</details>
+
+<hr>
+
+<h2>Section V - Optional Setup</h2>
+
+<details>
+<summary>Recommended</summary>
+<ul>
+<li>Format SD card to FAT32 (reduces corruption risk)</li>
+<li>Go to <b>Tools → Partition SD Card</b></li>
+<li>Create emuMMC if desired</li>
+</ul>
+</details>
+
+<hr>
+
+<h2>Final Step</h2>
+<h3>
+Go to Home → Payloads → select <code>fusee.bin</code> to launch Atmosphere.
+</h3>
+
+<h3>
+You are now running Custom Firmware on your Switch.
+</h3>
+
+<hr>
+
+<h2>Important Notes</h2>
+<ul>
+<li>CFW is not permanently installed</li>
+<li>Must be reloaded after shutdown (especially on unpatched consoles)</li>
+<li>Always keep NAND backups safe to prevent bricking</li>
+</ul>
+
+<hr>
+
+<h3>Nintendo Switch Modding Guide • Custom Firmware Setup</h3>
+</div>
+ </div>
+ </div>
+<div class="section">
+  <h2>Xbox</h2>
+<div class="dropdown" onmouseenter="playHover()">
+
+  <input type="checkbox" id="toggle17">
+  <label for="toggle17" class="dropdown-title">Xbox</label>
+
+<div class="dropdown-content">
+<header>
+<h1>XBHDM</h1>
+<h3>Softmod Your Xbox & Enable Homebrew</h3>
+</header>
+
+<hr>
+
+<h2>Overview</h2>
+<h3>
+XBHDM is a process used to softmod your Xbox console, allowing you to run homebrew software and game backups.
+</h3>
+<h3>
+This method works by unlocking the Xbox hard drive, connecting it to a PC, modifying its files directly, and then re-locking it using the console’s HDD key or user password.
+</h3>
+
+<hr>
+
+<h2>Important Notes</h2>
+<ul>
+<li>Requires unlocking and re-locking the Xbox hard drive</li>
+<li>Uses HDD key or EEPROM backup for security</li>
+<li>Can be used on new drives if correct key/password is available</li>
+<li><b>Avoid hotswapping</b> (unsafe and outdated method)</li>
+</ul>
+
+<hr>
+
+<h2>Section I - Requirements</h2>
+
+<details>
+<summary>What You Need</summary>
+<ul>
+<li>Windows PC</li>
+<li>FATXplorer 3.0 Beta</li>
+<li>XBHDM Build.zip</li>
+<li>Way to access Xbox HDD key (EEPROM backup or HDD password)</li>
+<li>Tools to open/disassemble the Xbox</li>
+</ul>
+</details>
+
+<hr>
+
+<h2>Section II - Preparation</h2>
+
+<details>
+<summary>Steps</summary>
+<ul>
+<li>Download and extract FATXplorer and XBHDM to separate folders</li>
+<li>Disassemble the Xbox to access the hard drive</li>
+<li>Connect the hard drive to your PC</li>
+</ul>
+</details>
+
+<hr>
+
+<h2>Section III - Unlock & Backup</h2>
+
+<details>
+<summary>Steps</summary>
+<ul>
+<li>Open FATXplorer and go to <b>HDD Security Tools</b></li>
+<li>Select the Xbox hard drive</li>
+<li>Unlock it using the HDD password or EEPROM backup</li>
+<li>Mount the <code>C</code> partition and back it up</li>
+<li>Also back up the <code>E</code> partition (contains saves & DLC)</li>
+</ul>
+</details>
+
+<hr>
+
+<h2>Section IV - Install Softmod</h2>
+
+<details>
+<summary>Steps</summary>
+<ul>
+<li>Drag and drop XBHDM softmod files onto the hard drive</li>
+<li>Replace any existing files if prompted</li>
+</ul>
+</details>
+
+<hr>
+
+<h2>Section V - Re-lock & Reinstall</h2>
+
+<details>
+<summary>Steps</summary>
+<ul>
+<li>Use FATXplorer to re-lock the hard drive</li>
+<li>Safely unmount the drive from your PC</li>
+<li>Disconnect and reinstall it into the Xbox</li>
+</ul>
+</details>
+
+<hr>
+
+<h2>Final Step</h2>
+<h3>
+Power on the Xbox. If done correctly, it will boot into a softmod installer.
+</h3>
+<h3>
+Complete the installer, then proceed to upgrading your hard drive for more storage.
+</h3>
+
+<hr>
+
+<h3>Xbox Modding Guide • XBHDM Softmod Method</h3>
+</div>
+</div>
+<div class="dropdown" onmouseenter="playHover()">
+
+  <input type="checkbox" id="toggle18">
+  <label for="toggle18" class="dropdown-title">Xbox 360</label>
+
+<div class="dropdown-content">
+<header>
+<h1>Bad Update</h1>
+<h3>Xbox 360 Hypervisor Exploit (17559)</h3>
+</header>
+
+<hr>
+
+<h2>Overview</h2>
+<h3>
+Bad Update is a non-persistent, software-only hypervisor exploit for all Xbox 360 models running dashboard version 17559.
+</h3>
+<h3>
+It allows running unsigned code when combined with tools like XeUnshackle or FreeMyXe.
+</h3>
+<h3>
+The exploit is temporary and will reset after the console is powered off.
+</h3>
+
+<hr>
+
+<h2>Supported Entry Points</h2>
+<ul>
+<li>Exploited Xbox Avatar (ABadAvatar)</li>
+<li>Rock Band Blitz (trial or full)</li>
+<li>Tony Hawk's American Wasteland (NTSC/PAL/RF)</li>
+</ul>
+
+<h3>
+This exploit has around an 80% success rate and may require multiple attempts.
+</h3>
+
+<hr>
+
+<h2>Section I - Required Items</h2>
+
+<details>
+<summary>Requirements</summary>
+<ul>
+<li>Xbox 360 (dashboard 17559)</li>
+<li>Supported game OR ABadAvatar</li>
+<li>Xbox360BadUpdate (if using a game)</li>
+<li>Extra avatar data (required for ABadAvatar if avatars appear gray)</li>
+<li>USB drive (minimum 64MB, FAT32 formatted)</li>
+<li>512MB+ USB (required for Rock Band Blitz)</li>
+<li>XeUnshackle (recommended) or FreeMyXe</li>
+<li>XeXMenu and additional homebrew (Aurora, FreeStyle 3, etc.)</li>
+</ul>
+</details>
+
+<hr>
+
+<h2>Section II - Preparing USB Drive</h2>
+
+<details>
+<summary>Steps</summary>
+<ul>
+<li>Format USB drive to FAT32 (use Xbox dashboard if needed)</li>
+<li>Extract exploit files to the root of the USB drive</li>
+<li>Replace <code>default.xex</code> in payload folder with XeUnshackle or FreeMyXe</li>
+<li>If using ABadAvatar, no payload replacement is required</li>
+<li>Add any extra homebrew to the USB drive</li>
+</ul>
+</details>
+
+<hr>
+
+<h2>Section III - Disable Auto Sign-In (ABadAvatar)</h2>
+
+<details>
+<summary>Steps</summary>
+<ul>
+<li>Press Xbox Guide button</li>
+<li>Go to Settings → Profile</li>
+<li>Select Sign-in Preferences</li>
+<li>Turn off Auto Sign-In</li>
+</ul>
+</details>
+
+<h3>
+This allows the exploit to run automatically on boot.
+</h3>
+
+<hr>
+
+<h2>Section IV - Running the Exploit</h2>
+
+<details>
+<summary>Steps</summary>
+<ul>
+<li><b>Disconnect from the Internet</b> (avoid Xbox Live bans)</li>
+<li>Sign into a local profile</li>
+<li>Insert USB drive</li>
+
+<li><b>Tony Hawk's American Wasteland:</b>
+<ul>
+<li>Launch game → High Score/Free Skate</li>
+<li>Select "No" if prompted</li>
+<li>Go to level select → Created Park → Load Park</li>
+<li>Select "Hack Xbox"</li>
+<li>Start park to trigger exploit</li>
+</ul>
+</li>
+
+<li><b>Rock Band Blitz:</b>
+<ul>
+<li>Launch game and press A</li>
+<li>Select USB storage</li>
+<li>Wait for "Running exploit"</li>
+</ul>
+</li>
+
+<li><b>ABadAvatar:</b>
+<ul>
+<li>Open sign-in screen</li>
+<li>Wait for avatars to load</li>
+<li>Exploit runs automatically if configured correctly</li>
+</ul>
+</li>
+</ul>
+</details>
+
+<hr>
+
+<h2>Section V - After Exploit</h2>
+
+<details>
+<summary>What Happens</summary>
+<ul>
+<li>CPU key will be displayed — save it!</li>
+<li>Press A to continue through prompts</li>
+<li>Console is now capable of running unsigned code</li>
+<li>Use XeXMenu to launch homebrew</li>
+</ul>
+</details>
+
+<h3>
+It is highly recommended to create a NAND backup to prevent permanent damage.
+</h3>
+
+<hr>
+
+<h2>Section VI - Notes & Safety</h2>
+<ul>
+<li>Do NOT connect to Xbox Live during exploit</li>
+<li>Exploit resets after shutdown</li>
+<li>Newer versions remove need to patch XEX files</li>
+<li>LAN features like FTP/System Link can be used safely</li>
+<li>Disable Auto Power-Off for better control</li>
+</ul>
+
+<hr>
+
+<h2>Section VII - LED Indicators</h2>
+<h3>
+The Xbox 360 LEDs indicate exploit progress. Different patterns show different states.
+</h3>
+
+<hr>
+
+<h2>Section VIII - Error Codes</h2>
+<h3>
+Errors may appear due to corrupted files or failed attempts.
+</h3>
+<h3>
+Check official documentation to understand specific error codes.
+</h3>
+
+<hr>
+
+<h3>Xbox 360 Modding Guide • Bad Update Exploit</h3>
+</div>
+</div>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+</body>
+</html>

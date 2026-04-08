@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/style.css')}}">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+<link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <title>Games</title>
+</head>
+<body>
+    <ul class="nav nav-tabs">
+  <li class="nav-item">
+    <a class="nav-link" onclick="playsound(event)" href="{{ url_for('home')}}" onmouseenter="playHover()" >Simulation</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="{{ url_for('roms') }}" onclick="playsound(event)" onmouseenter="playHover()" >ROMs</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="{{ url_for('Emulators')}}" onclick="playsound(event)" onmouseenter="playHover()" >Emulators</a>
+  </li>
+   <li class="nav-item">
+    <a class="nav-link" href="{{ url_for('News')}}" onclick="playsound(event)" onmouseenter="playHover()" >News</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="{{ url_for('Modding')}}" onclick="playsound(event)" onmouseenter="playHover()" >Modding</a>
+  </li>
+    <li class="nav-item">
+    <a class="nav-link active" href="{{ url_for('Games')}}" onclick="playsound(event)" onmouseenter="playHover()" >Games</a>
+  </li>
+</ul>
+<div class="sect">
+<h1 class="game">Game Library</h1>
+<form method="POST">
+    <input type="text" name="search" value="{{ query }}" placeholder="Search for a game..." required>
+    <button type="submit">Search</button>
+</form>
+
+{% if Games %}
+    <h3>Results for "{{ query }}"</h3>
+{% endif %}
+<hr>
+<div class="container">
+    {% for game in Games %}
+    <div class="card">
+        <img src="{{ game.background_image }}" alt="cover">
+
+        <div class="card-content">
+            <h3 style="color: white;">{{ game.name }}</h3>
+
+            <p style="color: white;">Release: {{ game.released }}</p>
+
+            <p class="platform">
+                {% for p in game.platforms %}
+                    {{ p.platform.name }} 
+                {% endfor %}
+            </p>
+        </div>
+        <a href="https://romsfun.com/roms/" class="button1">Download</a>
+    </div>
+    {% endfor %}
+<a href="/Games?page={{ page - 1 }}" class="button">⬅️ Prev</a>
+<a href="/Games?page={{ page + 1 }}" class="button">Next ➡️</a>
+</div>
+</div>
+
+#whats this 55664455
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
