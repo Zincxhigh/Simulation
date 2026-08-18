@@ -2,7 +2,7 @@
 ![Made with Blood, Sweat & Tears](https://img.shields.io/badge/Made%20with-Blood%2C%20Sweat%20%26%20Tears-darkred)
 ![Greatest Website Ever](https://img.shields.io/badge/Greatest-Website%20Ever-blue)
 
-### Simulation
+## Simulation
 A website all about emulation from "how to start emulating" to "how the other emulations are coming along" you will find all the necessary tools to enjoy your childhood title.
 
 ### Features
@@ -12,11 +12,11 @@ A website all about emulation from "how to start emulating" to "how the other em
 * A News section diving into the news of emulation whats happening new around the world and in the emulation world.
 * A Modding section explaining how to mod every consele from PS till commrade 16.
 * A game library section for downloading games roms and playing it on the emulators
-### stack used
-## FRONTEND
+## stack used
+### FRONTEND
 * Raw CSS
 * Raw html
-## BACKEND
+### BACKEND
 * Python
 * Flask
 * Requests
